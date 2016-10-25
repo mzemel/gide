@@ -1,0 +1,22 @@
+<h2>Show audit</h2>
+
+<ul>
+
+  <li>
+    <strong>FkGuid:</strong>
+    <%= @audit.fk_guid %>
+  </li>
+
+  <li>
+    <strong>Event:</strong>
+    <%= @audit.event %>
+  </li>
+
+  <li>
+    <strong>Ip:</strong>
+    <%= @audit.ip %>
+  </li>
+
+</ul>
+
+<%= link "Back", to: audit_path(@conn, :index) %>

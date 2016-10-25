@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["fk_guid", "event", "ip"],
+  "properties": {
+    "fk_guid": {"type": "string"},
+    "event": {"type": "string"},
+    "ip": {"type": "string"}
+  }
+}

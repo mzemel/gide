@@ -1,0 +1,27 @@
+<h2>Listing audits</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Guid Foreign Key</th>
+      <th>Event</th>
+      <th>Ip</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for audit <- @audits do %>
+    <tr>
+      <td><%= audit.fk_guid %></td>
+      <td><%= audit.event %></td>
+      <td><%= audit.ip %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: audit_path(@conn, :show, audit), class: "btn btn-default btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
